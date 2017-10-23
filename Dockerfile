@@ -1,9 +1,10 @@
-FROM debian:latest
+FROM alpine:latest
 ENV LANG C.UTF-8
-RUN apt-get update && apt-get install -y \
+RUN apk add --no-cache \
+    abuild \
+    binutils \
     bison \
+    build-base \
     curl \
     flex \
-    gcc \
-    make \
-    libc-dev-bin
+    gcc
