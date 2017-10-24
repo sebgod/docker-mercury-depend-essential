@@ -6,5 +6,6 @@ RUN apk add --no-cache \
     bison \
     build-base \
     curl \
+    diffutils \
     flex \
     gcc
